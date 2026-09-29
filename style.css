@@ -1,0 +1,850 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#F8FCF9;
+    color:#174A35;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    border-bottom:2px solid #238B5A;
+    gap:30px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    flex-shrink:0;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+    object-fit:cover;
+    margin-right:10px;
+    border-radius:50%;
+}
+
+.logo h2{
+    color:#174A35;
+    font-size:20px;
+    white-space:nowrap;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    display:inline-block;
+    color:#1D4733;
+    background:#ABD1B5;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:20px;
+    font-weight:bold;
+    transition:0.3s;
+    white-space:nowrap;
+}
+
+nav a:hover{
+    color:#FFFFFF;
+    background:#238B5A;
+    transform:scale(1.05);
+    box-shadow:0 4px 10px rgba(35,139,90,0.25);
+}
+
+nav a.active{
+    color:#FFFFFF;
+    background:#238B5A;
+}
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-info{
+    background:#DFF2E7;
+    padding:70px 8%;
+}
+
+.home-content{
+    max-width:1150px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+}
+
+.home-left{
+    flex:1;
+}
+
+.home-title{
+    margin-bottom:35px;
+}
+
+.home-title h3{
+    color:#238B5A;
+    font-size:18px;
+    margin-bottom:8px;
+}
+
+.home-title h2{
+    font-size:32px;
+    color:#174A35;
+    margin-bottom:15px;
+}
+
+.home-title p{
+    color:#527064;
+    line-height:1.7;
+    font-size:16px;
+}
+
+.home-cards{
+    display:flex;
+    gap:20px;
+}
+
+.home-card{
+    background:#FFFFFF;
+    padding:25px;
+    border-radius:18px;
+    flex:1;
+    box-shadow:0 5px 15px rgba(23,74,53,0.10);
+    transition:0.3s;
+}
+
+.home-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(23,74,53,0.15);
+}
+
+.home-icon{
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+.home-card h3{
+    color:#174A35;
+    margin-bottom:10px;
+}
+
+.home-card p{
+    color:#527064;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.home-card a{
+    color:#238B5A;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.home-image{
+    flex:0 0 420px;
+}
+
+.home-image img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:0 8px 25px rgba(23,74,53,0.18);
+}
+
+.home-bottom{
+    text-align:center;
+    padding:70px 20px;
+    background:#174A35;
+    color:#FFFFFF;
+}
+
+.home-bottom h2{
+    margin-bottom:15px;
+}
+
+.home-bottom p{
+    margin-bottom:25px;
+    line-height:1.6;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 22px;
+    background:#238B5A;
+    color:#FFFFFF;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(0.95);
+    background:#1D4733;
+}
+
+.btn2{
+    display:inline-block;
+    padding:12px 22px;
+    background:#ABD1B5;
+    color:#174A35;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn2:hover{
+    transform:scale(0.95);
+    background:#238B5A;
+    color:#FFFFFF;
+}
+
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 30px;
+}
+
+.about-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.about-title h3{
+    color:#238B5A;
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+.about-title h1{
+    color:#174A35;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.about-title p{
+    color:#527064;
+    line-height:1.7;
+    max-width:700px;
+    margin:auto;
+}
+
+.about-intro{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-bottom:40px;
+}
+
+.about-card{
+    background:#FFFFFF;
+    padding:30px;
+    border-radius:18px;
+    border-left:5px solid #238B5A;
+    box-shadow:0 5px 15px rgba(23,74,53,0.10);
+}
+
+.about-card h2{
+    color:#174A35;
+    margin-bottom:12px;
+}
+
+.about-card p{
+    color:#527064;
+    line-height:1.7;
+}
+
+.about-school{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.about-school-image img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.about-address{
+    background:#DFF2E7;
+    padding:30px;
+    border-radius:20px;
+}
+
+.about-address h2{
+    color:#174A35;
+    margin-bottom:15px;
+}
+
+.about-address h3{
+    color:#238B5A;
+    margin-top:20px;
+    margin-bottom:8px;
+}
+
+.about-address p{
+    color:#527064;
+    line-height:1.7;
+}
+
+.about-info-card{
+    background:#FFFFFF;
+    padding:30px;
+    margin-bottom:25px;
+    border-radius:18px;
+    box-shadow:0 5px 15px rgba(23,74,53,0.08);
+}
+
+.about-info-card h2{
+    color:#174A35;
+    margin-bottom:18px;
+}
+
+.about-info-card h3{
+    color:#238B5A;
+    margin:25px 0 12px;
+}
+
+.about-info-card p{
+    color:#527064;
+    line-height:1.7;
+    margin-bottom:12px;
+}
+
+.about-info-card ul{
+    padding-left:25px;
+}
+
+.about-info-card li{
+    color:#527064;
+    line-height:1.7;
+    margin-bottom:8px;
+}
+
+
+/* =========================
+   DISCIPLINE TABLE
+========================= */
+
+.discipline-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.discipline-table th{
+    background:#174A35;
+    color:#FFFFFF;
+    padding:12px;
+    text-align:left;
+}
+
+.discipline-table td{
+    padding:12px;
+    border:1px solid #CFE3D6;
+    color:#527064;
+}
+
+.discipline-table tr:nth-child(even){
+    background:#F1F8F3;
+}
+
+
+/* =========================
+   ACADEMICS PAGE
+========================= */
+
+.academics{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 30px;
+}
+
+.page-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.page-title h3{
+    color:#238B5A;
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+.page-title h1{
+    color:#174A35;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.page-title p{
+    color:#527064;
+    line-height:1.7;
+    max-width:700px;
+    margin:auto;
+}
+
+.card{
+    background:#FFFFFF;
+    padding:30px;
+    border-radius:18px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(23,74,53,0.08);
+}
+
+.card h2{
+    color:#174A35;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#238B5A;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#527064;
+    line-height:1.7;
+}
+
+.card ul{
+    padding-left:25px;
+}
+
+.card li{
+    color:#527064;
+    line-height:1.7;
+    margin-bottom:8px;
+}
+
+
+/* =========================
+   CAMPUS LIFE PAGE
+========================= */
+
+.campus-page{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 30px;
+}
+
+.campus-card{
+    background:#FFFFFF;
+    padding:25px;
+    margin-bottom:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(23,74,53,0.10);
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.campus-card > img{
+    width:300px;
+    height:300px;
+    min-width:300px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.campus-images{
+    display:flex;
+    gap:15px;
+    flex-shrink:0;
+}
+
+.campus-images img{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.campus-text{
+    flex:1;
+}
+
+.campus-text h2{
+    color:#174A35;
+    margin-bottom:12px;
+}
+
+.campus-text p{
+    color:#527064;
+    line-height:1.7;
+}
+
+.campus-info{
+    background:#DFF2E7;
+    padding:30px;
+    border-radius:20px;
+    margin-top:20px;
+}
+
+.campus-info h2{
+    color:#174A35;
+    margin-bottom:15px;
+}
+
+.campus-info p{
+    color:#527064;
+    line-height:1.7;
+    margin-bottom:10px;
+}
+
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-page{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 30px;
+}
+
+.contact-container{
+    max-width:950px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    align-items:stretch;
+}
+
+.contact-info,
+.contact-message{
+    background:#FFFFFF;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(23,74,53,0.10);
+}
+
+.contact-info h2,
+.contact-message h2{
+    color:#174A35;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    color:#527064;
+    line-height:1.7;
+    margin-bottom:12px;
+}
+
+.contact-message label{
+    display:block;
+    color:#174A35;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+.contact-message input,
+.contact-message textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #CFE3D6;
+    border-radius:10px;
+    margin-bottom:15px;
+    font-family:Arial, sans-serif;
+}
+
+.contact-message textarea{
+    height:130px;
+    resize:vertical;
+}
+
+.contact-message button{
+    border:none;
+    cursor:pointer;
+}
+
+
+/* =========================
+   MOBILE / SMALL SCREEN
+========================= */
+
+@media(max-width:900px){
+
+    header{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav{
+        justify-content:center;
+    }
+
+    .home-content{
+        flex-direction:column;
+    }
+
+    .home-image{
+        width:100%;
+        flex:none;
+    }
+
+    .home-image img{
+        height:350px;
+    }
+
+    .home-cards{
+        flex-direction:column;
+    }
+
+    .about-intro{
+        grid-template-columns:1fr;
+    }
+
+    .about-school{
+        grid-template-columns:1fr;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    .campus-card{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .campus-card > img{
+        width:100%;
+        min-width:0;
+        height:auto;
+        aspect-ratio:1 / 1;
+    }
+
+    .campus-images{
+        width:100%;
+        display:flex;
+        gap:15px;
+    }
+
+    .campus-images img{
+        width:calc(50% - 7.5px);
+        height:auto;
+        aspect-ratio:1 / 1;
+    }
+
+    .campus-text{
+        width:100%;
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .logo h2{
+        font-size:16px;
+    }
+
+    nav{
+        gap:5px;
+    }
+
+    nav a{
+        padding:8px 10px;
+        font-size:13px;
+    }
+
+    .home-info,
+    .about-page,
+    .academics,
+    .campus-page,
+    .contact-page{
+        padding:40px 20px;
+    }
+
+    .home-title h2,
+    .about-title h1,
+    .page-title h1{
+        font-size:28px;
+    }
+
+    .home-image img{
+        height:300px;
+    }
+
+    .campus-card{
+        padding:18px;
+    }
+
+    .campus-images{
+        gap:10px;
+    }
+
+    .campus-images img{
+        width:calc(50% - 5px);
+    }
+
+}
+
+
+/* =========================
+   CUTE CONTACT MARQUEE
+========================= */
+
+.name-marquee{
+    width:100%;
+    overflow:hidden;
+    background:#DFF2E7;
+    border-top:2px solid #ABD1B5;
+    border-bottom:2px solid #ABD1B5;
+    padding:14px 0;
+    position:relative;
+}
+
+.marquee-track{
+    display:flex;
+    width:max-content;
+    animation:marquee 22s linear infinite;
+}
+
+.marquee-track span{
+    display:inline-block;
+    background:#FFFFFF;
+    color:#174A35;
+    padding:10px 18px;
+    margin:0 8px;
+    border-radius:25px;
+    font-weight:bold;
+    font-size:15px;
+    box-shadow:0 4px 10px rgba(23,74,53,0.10);
+    border:1px solid #ABD1B5;
+    white-space:nowrap;
+}
+
+.marquee-track span:nth-child(3n){
+    background:#ABD1B5;
+}
+
+.marquee-track span:nth-child(4n){
+    background:#FFFFFF;
+}
+
+@keyframes marquee{
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+/* =========================
+   GROUP MEMBERS
+========================= */
+
+.group-members{
+    text-align:center;
+    margin-top:60px;
+    padding:40px 20px;
+    background:#DFF2E7;
+    border-radius:25px;
+}
+
+.group-members h2{
+    color:#174A35;
+    font-size:28px;
+    margin-bottom:30px;
+}
+
+.members-grid{
+    max-width:900px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+}
+
+.member{
+    background:#FFFFFF;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(23,74,53,0.10);
+    transition:0.3s;
+}
+
+.member:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(23,74,53,0.15);
+}
+
+.member img{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #ABD1B5;
+    margin-bottom:12px;
+}
+
+.member h3{
+    color:#174A35;
+    font-size:17px;
+}
+
+
+/* =========================
+   GROUP MEMBERS - MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .members-grid{
+        grid-template-columns:1fr 1fr;
+        gap:18px;
+    }
+
+    .member{
+        padding:15px;
+    }
+
+    .member img{
+        width:120px;
+        height:120px;
+    }
+
+    .member h3{
+        font-size:14px;
+    }
+
+}
